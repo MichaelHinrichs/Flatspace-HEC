@@ -7,13 +7,13 @@ namespace Flatspace_HEC
 {
     public class HEC
     {
-        private string textureA;
-        private string textureB;
-        private string textureC;//I haven't seen a model that has 3 textures, but there's exactly enough space for one in between textureB and the point cloud.
-        private readonly List<Vector3> points;
-        private readonly List<Vector3> normals;
-        private readonly List<Vector2> uvs;
-        private readonly List<Vector3> faces;
+        private string textureA = new();
+        private string textureB = new();
+        private string textureC = new();//I haven't seen a model that has 3 textures, but there's exactly enough space for one in between textureB and the point cloud.
+        private readonly List<Vector3> points = new();
+        private readonly List<Vector3> normals = new();
+        private readonly List<Vector2> uvs = new();
+        private readonly List<Vector3> faces = new();
 
         private static HEC Read(string HECFile)
         {
